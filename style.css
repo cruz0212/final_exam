@@ -1,0 +1,152 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #1D1E1E;
+    color: #fff;
+}
+
+.hero .btn {
+    background: #606868;
+    color: #CBD7D1;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    background: #1D1E1E;
+    flex: 1;
+    min-width: 200px;
+    padding:  1rem;   
+    color: #fff;
+    border-radius: 0px;
+    
+}
+
+/* Skills Section */
+.skills {
+    padding: 2rem 1rem;
+    
+    background: #1D1E1E;
+    color: #fff;
+}
+
+.skills-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1;
+    min-width: 200px;
+    background: #606868;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 2rem 1rem;
+    background: #1D1E1E;
+    color: #ddd;
+    
+}
+
+.project-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+}
+.project {
+    flex: 1;
+    min-width: 200px;
+    background: #606868;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+}
+.contact {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: #1D1E1E;
+    color:#ddd
+    
+    
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #1D1E1E;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-grid, .project-grid {
+        flex-direction: column; 
+        
+    }
+}
